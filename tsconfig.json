@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "target": "es2016",
+    "module": "es6",
+    "outDir": "dist"
+  },
+  "exclude": ["node_modules", "src/**/*.test.ts"]
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Demo</h1>
+  <script type="module" src="../dist/index.js"></script>
+  <script type="module">
+    import Storex from '../dist/index.js';
+    const storex = new Storex({
+      stateName: "test",
+      state: { foo: "bar", baz: "bar" }
+    });
+    const { state } = storex;
+    state.foo = "I will be set in localStorage";
+    state.baz = "Myself as well, you ain't unique after all";
+  </script>
+</body>
+
+</html>
